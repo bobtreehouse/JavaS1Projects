@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: restCalculator-lastname-firstname
+  description: A simple Calculator.
+  version: 0.0.1
+servers:
+    - url: 'http://localhost:8080/day'
+      description: Local dev server
+
+paths:
+  /add/{input}:
+    get:HTTP Method: POST
+
+RequestBody: JSON object with operand1 and operand2
+
+Response: Sum of operand1 and operand2
+
+Error: if missing operand or if operands are not both numbers
+      summary: return name of day the number converts to.
+      description: A simple demo service that simply echos your input back to you.
+      parameters:
+        - name: input
+          in: path
+          required: true
+          description: The name of the day that the number converts to.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The name of the day that the number converts to.
+
+
+        '422':
+          description: Number out of range.
+paths:
+  /mult/{input}:
+    HTTP Method: POST
+    RequestBody: JSON object with operand1 and operand2
+    Response: Product of operand1 and operand2
+    Error: if missing operand or if operands are not both numbers
+
+paths:
+  /subtract/{input}:
+    RequestBody: JSON object with operand1 and operand2
+    Response: Difference of operand1 and operand2
+
+Error: if missing operand or if operands are not both numbers
+
+paths:
+  /divide/{input}:
+    RequestBody: JSON object with operand1 and operand2
+    Response: Quotient of operand1 and operand2
+    Error: if missing operand or if operands are not both numbers

@@ -1,0 +1,28 @@
+openapi: 3.0.0
+info:
+  title: dayConverter-Trieste-Bob
+  description: A simple service that echos your input back to you.
+  version: 0.0.1
+servers:
+    - url: 'http://localhost:8080/day'
+      description: Local dev server
+
+paths:
+  /echo/{input}:
+    get:
+      summary: return name of day the number converts to.
+      description: A simple demo service that simply echos your input back to you.
+      parameters:
+        - name: input
+          in: path
+          required: true
+          description: The name of the day that the number converts to.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The name of the day that the number converts to.
+
+    
+        '422':
+          description: Number out of range.

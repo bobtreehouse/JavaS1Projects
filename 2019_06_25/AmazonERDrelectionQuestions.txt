@@ -1,0 +1,31 @@
+Data Modeling: Amazon.com
+
+Bob Trieste answers to Reflection Questions on the Amazon ERD exercise.
+
+Reflection Questions after Amazon  database design documented using a Draw.io
+ER diagram along with a copy of the group ERD.
+
+
+What was the most difficult part of this model?
+      I think one aspect to be addressed is what pieces of data belong in
+      each step of the process. For example the "tags" to be applied to each
+      piece of the metadata and what primary key should be used.
+
+What change along the way presented the biggest challenge?
+      The harder part was determining what elements belong to each field in
+      terms of both deciding the "primary key" and which if any "foreign keys"
+      would be helpful to tie together important data. Additionally, the Amazon
+      Modeling example was a good lesson in the use case in the merits of a
+      "composite primary key".
+
+
+How difficult or easy was it to change your model midstream?
+      The good news was to see by way of the ER diagram we could
+      "re-draw" lines of flow and connection.
+
+
+Where there any columns on which your team didn't agree on a data type?
+      It was a good exercise to realize that something like a "customer telephone
+      number, although made up of "numeric" values, could really be looked at
+      as text because it is not an element we will do computations on, rather an
+      identifying piece of information that we do not want to change.

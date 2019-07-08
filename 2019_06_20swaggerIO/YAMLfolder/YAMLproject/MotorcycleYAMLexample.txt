@@ -1,0 +1,112 @@
+openapi: 3.0.0
+info:
+  title: MotoInventory Service
+  description:
+    A simple service that allows CRUD operations for a motocycle inventory
+    system.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /motorcycles:
+    post:
+      summary: Creates a new motorcycle entry with the given information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Motorcycle'
+      responses:
+        '201':
+          description: A motorcycle object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Motorcycle'
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete motorcycle information. Some required fields missing.
+
+  /motorcycles{motoId}:
+    # GET, DELETE, and PUT are all under this path entry
+    get:
+      summary: Retrieves the entry for the motorcycle with the give ID.
+      parameters:
+        - name: motoId
+          in: path
+          required: true
+          description: ID of the motorcycle you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Motorcyle object matching given ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Motorcycle'
+
+    delete:
+      summary: Deletes the entry for the motorcycle with the given ID.
+      parameters:
+        - name: motoId
+          in: path
+          required: true
+          description: ID of the motorcycle you would like to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Motorcycle successfully deleted.
+
+    put:
+      summary: Updated the entry for the motorcycle with the given ID.
+      parameters:
+        - name: motoId
+          in: path
+          required: true
+          description: ID of the motorcycle you would like to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Motorcycle'
+      responses:
+        '200':
+          description: Motorcycle successfully updated.
+        '422':
+          description: Motorcycle ID on path mush match the ID in the Motorcycle object.
+components:
+  schemas:
+    Motorcycle:
+      properties:
+        id:
+          type: integer
+        vin:
+          type: string
+        make:
+          type: string
+        model:
+          type: string
+        year:
+          type: string
+        color:
+          type: string
+      required:
+        - vin
+        - make
+        - model
+        - year
+        - color

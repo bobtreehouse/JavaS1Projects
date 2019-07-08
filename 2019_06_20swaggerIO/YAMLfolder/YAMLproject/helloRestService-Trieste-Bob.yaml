@@ -1,0 +1,47 @@
+openapi: 3.0.0
+info:
+  title: helloRestService-Trieste-Bob.yaml
+  description:
+    A simple service for Hello.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /hello/{BobTrieste}:
+    post:
+      summary: Say Hello.
+      requestBody:
+        required: true
+        content:
+          application/json:
+
+      responses:
+        '201':
+          description: A simple hello object
+          content:
+            application/json:
+
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete  information. Some required fields missing.
+
+  /hello/Bob{motoId}:
+    # GET, DELETE, and PUT are all under this path entry
+    get:
+      summary: Retrieves the entry for the motorcycle with the give ID.
+      parameters:
+        - name: motoId
+          in: path
+          required: true
+          description: ID of the motorcycle you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Hello, Bob.
+          content:
+            application/json:

@@ -1,0 +1,76 @@
+openapi: 3.0.0
+info: title:weatherAPI-Trieste-Bob
+description: searches for weather Zipcode
+
+version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+
+paths:
+  /temp:
+    # GET, DELETE, and PUT are all under this path entry
+    get:
+      summary: Retrieves the entry for the motorcycle with the give ID.
+      parameters:
+        - name: motoId
+          in: path
+          required: true
+          description: ID of the motorcycle you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+    '200':
+          description: weather for given ZIP Code.
+          content: JSON Object
+          application/json:
+              schema:
+                $ref: '#/components/schemas/Weather'
+
+  /conditions:
+    description: Local dev server
+
+    get:
+      summary: weather for given ZIP Code.
+      parameters:
+        - name: motoId
+          in: path
+          required: true
+          description: ZIP code t update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody: None
+      required: true
+      content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Wether'
+    responses:
+        '200':
+          description: Zip Code successfully updated.
+        '422':
+          description: Zip Code Nuber out of bounds.
+components:
+  schemas:
+    Weather:
+      properties:
+        Conditions
+        type: String
+        Temperature
+        type: int
+        fahrenheit
+        type: int
+        celsius
+        type: int
+        wind speed
+        type: int
+        wind direction
+        type: int
+        skies (i.e sunny, cloudy, partly sunny, etc)
+        type: String
+        precipitation (i.e. rain, snow, mist, none)
+        type: String

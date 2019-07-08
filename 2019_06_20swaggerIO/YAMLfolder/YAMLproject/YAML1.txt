@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Echo Range Service
+  description: A simple service that echos your input back to you if it is in range.
+  version: 0.0.1
+servers:
+    - url: http://localhost:8080
+      description: Local dev server
+
+paths:
+  /echo/{input}:
+    get:
+      summary: Echos your input back to you
+      description: A simple demo service that simply echos your input back to you as long as it is in the range 1 - 10.
+      parameters:
+        - name: input
+          in: path
+          required: true
+          description: The value you would like to have echoed back to you.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+            maximum: 10
+      responses:
+        '200':
+          description: The value the you sent to the service.
+          content:
+            application/json:
+              schema:
+                type: integer
+        '422':
+          description: You must enter a number between 1 and 10.

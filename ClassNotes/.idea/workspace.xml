@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d3f05085-2e83-4939-a0ba-f4f2c2445c2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../2019_05_31/04-Loan-Calculator/.idea/04-Loan-Calculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019_05_31/04-Loan-Calculator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019_05_31/04-Loan-Calculator/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019_05_31/04-Loan-Calculator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2019_05_31/YourAgeCan/YourAgeCan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_05_31/01-Hi-Lo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_05_31/01-Hi-Lo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_05_31/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_05_31/04-Loan-Calculator/starter-code/LoanCalculator/src/main/java/com/company/LoanCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_05_31/CountByThirteen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_05_31/CountByThirteen/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_05_31/CountByTwo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_05_31/CountByTwo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_05_31/CountTo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_05_31/CountTo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_05_31/RangeChecker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_05_31/RangeChecker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2019_05_31/katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2019_05_31/katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Wk_1_Day_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/AllWithScanner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/ClassNotes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/ClassPresident.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/ClassWorkSample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/DaysWeek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/ScannerFromMd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/SwitchNoBreak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/src/main/java/Switches.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/AllWithScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/AllWithScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/ClassPresident.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/ClassPresident.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/ClassWorkSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/ClassWorkSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/SwitchNoBreak.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/SwitchNoBreak.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/Switches.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/Switches.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/com/trilogyed/DaysWeek.class" beforeDir="false" afterPath="$PROJECT_DIR$/Wk_1_Day_3/target/classes/com/trilogyed/DaysWeek.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/Wk_1_Day_3/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/Wk_1_Day_3/ClassNotes.iml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="550" />
+    <option name="y" value="-300" />
+    <option name="width" value="2106" />
+    <option name="height" value="1452" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ClassNotes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Wk_1_Day_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ClassPresident" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassPresident" />
+      <module name="ClassNotes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClassPresident" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3f05085-2e83-4939-a0ba-f4f2c2445c2a" name="Default Changelist" comment="" />
+      <created>1559268165190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559268165190</updated>
+      <workItem from="1559268166282" duration="658000" />
+      <workItem from="1559293604332" duration="46000" />
+      <workItem from="1559300520439" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="737000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="275" y="-150" width="1053" height="726" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27526468" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24791509" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32949308" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Wk_1_Day_3/src/main/java/ClassPresident.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
