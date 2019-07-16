@@ -17,10 +17,7 @@ public class SalesTaxRateJdbcTemplateImpl implements SalesTaxRateDao {
     private JdbcTemplate jdbcTemplate;
 
     private static final String GET_SALESTAXRATE_SQL =
-            "select * from sales_tax_rate where state = ?";
-
-    private static final String GET_ALL_SALESTAXRATES_SQL =
-            "select * from sales_tax_rate";
+           " select * from sales_tax_rate where state = ?";
 
 
 
@@ -31,23 +28,15 @@ public class SalesTaxRateJdbcTemplateImpl implements SalesTaxRateDao {
 
 
     @Override
-    @Transactional
     public SalesTaxRate getSalesTaxRate(String state) {
         try {
-            return jdbcTemplate.queryForObject(GET_SALESTAXRATE_SQL, this::mapRowToSalesTaxRate);
+            return jdbcTemplate.queryForObject(GET_SALESTAXRATE_SQL, this::mapRowToSalesTaxRate, state);
         } catch (EmptyResultDataAccessException e) {
             // if there is no match for this console return null
             return null;
         }
     }
 
-
-
-    @Override
-    public List<SalesTaxRate> getAllSalesTaxRates() {
-        jdbcTemplate.update(GET_ALL_SALESTAXRATES_SQL);
-        return getAllSalesTaxRates();
-    }
 
     private SalesTaxRate mapRowToSalesTaxRate(ResultSet rs, int rowNum) throws SQLException {
         SalesTaxRate salesTaxRate = new SalesTaxRate();

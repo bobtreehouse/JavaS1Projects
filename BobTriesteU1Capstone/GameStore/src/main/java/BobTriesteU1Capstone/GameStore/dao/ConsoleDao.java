@@ -7,13 +7,13 @@ public interface ConsoleDao {
 
     Console addConsole(Console console);
 
-    Console getConsole(int id);
+    Console getConsole(int consoleId);
 
     List<Console> getAllConsoles();
 
-    void updateConsole(Console console);
+    Console updateConsole(Console console);
 
-    void deleteConsole(int id);
+    void deleteConsole(int consoleId);
 
 
 }

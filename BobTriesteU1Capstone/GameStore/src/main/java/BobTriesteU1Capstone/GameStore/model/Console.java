@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class Console {
 
-    private int gameId;
+    private int consoleId;
     private String model;
     private String manufacturer;
     private String memoryAmount;
@@ -13,12 +13,12 @@ public class Console {
     private BigDecimal price;
     private int quantity;
 
-    public int getGameId() {
-        return gameId;
+    public int getConsoleId() {
+        return consoleId;
     }
 
-    public void setGameId(int gameId) {
-        this.gameId = gameId;
+    public void setConsoleId(int gameId) {
+        this.consoleId = gameId;
     }
 
     public String getModel() {
@@ -73,7 +73,7 @@ public class Console {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Console that = (Console) o;
-        return gameId == that.gameId &&
+        return consoleId == that.consoleId &&
                 model == that.model &&
                 manufacturer == that.manufacturer &&
                 memoryAmount == that.memoryAmount &&
@@ -84,7 +84,7 @@ public class Console {
 
     @Override
     public int hashCode() {
-        return Objects.hash(gameId, model, manufacturer, memoryAmount, processor, price, quantity);
+        return Objects.hash(consoleId, model, manufacturer, memoryAmount, processor, price, quantity);
     }
 
 

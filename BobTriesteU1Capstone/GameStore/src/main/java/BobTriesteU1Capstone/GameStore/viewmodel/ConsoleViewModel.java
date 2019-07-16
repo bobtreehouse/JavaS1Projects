@@ -7,7 +7,7 @@ import java.util.Objects;
 import javax.validation.constraints.NotEmpty;
 public class ConsoleViewModel {
 
-    private int gameId;
+    private int consoleId;
     @NotEmpty(message = "Please supply a value for model")
     private String model;
     @NotEmpty(message = "Please supply a value for manufacturer")
@@ -21,11 +21,11 @@ public class ConsoleViewModel {
     private int quantity;
 
     public int getGameId() {
-        return gameId;
+        return consoleId;
     }
 
     public void setGameId(int gameId) {
-        this.gameId = gameId;
+        this.consoleId = gameId;
     }
 
     public String getModel() {
@@ -81,7 +81,7 @@ public class ConsoleViewModel {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ConsoleViewModel that = (ConsoleViewModel) o;
-        return gameId == that.gameId &&
+        return consoleId == that.consoleId &&
                 model == that.model &&
                 manufacturer == that.manufacturer &&
                 memoryAmount == that.memoryAmount &&
@@ -92,6 +92,6 @@ public class ConsoleViewModel {
 
     @Override
     public int hashCode() {
-        return Objects.hash(gameId, model, manufacturer, memoryAmount, processor, price, quantity);
+        return Objects.hash(consoleId, model, manufacturer, memoryAmount, processor, price, quantity);
     }
 }

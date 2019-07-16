@@ -3,13 +3,17 @@ package BobTriesteU1Capstone.GameStore.dao;
 import BobTriesteU1Capstone.GameStore.model.*;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 import static org.junit.Assert.*;
-
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest
 public class TshirtJdbcTemplateImplTest {
 
 
@@ -31,7 +35,7 @@ public class TshirtJdbcTemplateImplTest {
     public void setUp() throws Exception {
         List<Console> consoles = consoleDao.getAllConsoles();
         for (Console cons : consoles) {
-            consoleDao.deleteConsole(cons.getGameId());
+            consoleDao.deleteConsole(cons.getConsoleId());
         }
 
         List<Game> games = gameDao.getAllGames();
@@ -89,7 +93,7 @@ public class TshirtJdbcTemplateImplTest {
         tshirt.setSize("YM");
         tshirt.setColor("Blue");
         tshirt.setDescription("Xbox Live");
-        tshirt.setPrice(new BigDecimal(12.95).setScale(2));
+        tshirt.setPrice(new BigDecimal("12.95"));
         tshirt.setQuantity(13);
 
         List<Tshirt> teeList = tshirtDao.getAllTshirts();
@@ -103,12 +107,12 @@ public class TshirtJdbcTemplateImplTest {
         tshirt.setSize("L");
         tshirt.setColor("Black");
         tshirt.setDescription("SonyGamer");
-        tshirt.setPrice(new BigDecimal(9.95).setScale(2));
+        tshirt.setPrice(new BigDecimal("9.95"));
         tshirt.setQuantity(9);
 
         tshirt = tshirtDao.addTshirt((tshirt));
 
-        tshirt.setPrice(new BigDecimal(6.95).setScale(2));
+        tshirt.setPrice(new BigDecimal("6.95"));
         tshirt.setQuantity(7);
 
         Tshirt tshirt1 = tshirtDao.getTshirt((tshirt.getTshirtId()));

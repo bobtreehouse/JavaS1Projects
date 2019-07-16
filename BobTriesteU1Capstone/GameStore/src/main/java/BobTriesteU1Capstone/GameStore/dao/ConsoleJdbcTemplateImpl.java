@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.core.JdbcTemplate;
+
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,16 +22,16 @@ public class ConsoleJdbcTemplateImpl implements ConsoleDao {
             "insert into console (model, manufacturer, memory_amount, processor, price, quantity) values (?, ?, ?, ?, ?, ?)";
 
     private static final String GET_CONSOLE_SQL =
-            "select * from console where customer_id = ?";
+            "select * from console where console_id = ?";
 
     private static final String SELECT_ALL_CONSOLES_SQL =
             "select * from console";
 
     private static final String UPDATE_CONSOLE_SQL =
-            "update console set model = ?, manufacturer = ?, memory_amount = ?, processor = ?, price = ?, quantity = ? where game_id = ?";
+            "update console set model = ?, manufacturer = ?, memory_amount = ?, processor = ?, price = ?, quantity = ? where console_id = ?";
 
     private static final String DELETE_CONSOLE =
-            "delete from console where game_id = ?";
+            "delete from console where console_id = ?";
 
     @Autowired
     public ConsoleJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {
@@ -51,9 +51,9 @@ public class ConsoleJdbcTemplateImpl implements ConsoleDao {
                 console.getPrice(),
                 console.getQuantity());
 
-        int game_id = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
+        int id = jdbcTemplate.queryForObject("select LAST_INSERT_ID()", Integer.class);
 
-        console.setGameId(game_id);
+        console.setConsoleId(id);
 
         return console;
     }
@@ -75,7 +75,7 @@ public class ConsoleJdbcTemplateImpl implements ConsoleDao {
     }
 
     @Override
-    public void updateConsole(Console console) {
+    public Console updateConsole(Console console) {
         jdbcTemplate.update(
                 UPDATE_CONSOLE_SQL,
                 console.getModel(),
@@ -83,7 +83,10 @@ public class ConsoleJdbcTemplateImpl implements ConsoleDao {
                 console.getMemoryAmount(),
                 console.getProcessor(),
                 console.getPrice(),
-                console.getQuantity());
+                console.getQuantity(),
+                console.getConsoleId());
+
+                return console;
 
     }
 
@@ -94,7 +97,7 @@ public class ConsoleJdbcTemplateImpl implements ConsoleDao {
 
     private Console mapRowToConsole(ResultSet rs, int rowNum) throws SQLException {
         Console console = new Console();
-        console.setGameId(rs.getInt("game_id"));
+        console.setConsoleId(rs.getInt("console_id"));
         console.setModel(rs.getString("model"));
         console.setManufacturer(rs.getString("manufacturer"));
         console.setMemoryAmount(rs.getString("memory_amount"));

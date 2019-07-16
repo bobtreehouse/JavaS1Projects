@@ -22,9 +22,6 @@ public class ProcessingFeeJdbcTemplateImpl implements ProcessingFeeDao {
 
 
 
-    private static final String SELECT_ALL_PROCESSINGFEES_SQL =
-            "select * from processing_fee";
-
 
 
     @Autowired
@@ -46,11 +43,6 @@ public class ProcessingFeeJdbcTemplateImpl implements ProcessingFeeDao {
     }
 
 
-    @Override
-    public List<ProcessingFee> getAllProcessingFees() {
-
-        return jdbcTemplate.query(SELECT_ALL_PROCESSINGFEES_SQL, this::mapRowToProcessingFee );
-    }
 
 
 

@@ -11,7 +11,7 @@ public interface ProcessingFeeDao {
 
     ProcessingFee getProcessingFee(int id);
 
-    List<ProcessingFee> getAllProcessingFees();
+
 
 
 
