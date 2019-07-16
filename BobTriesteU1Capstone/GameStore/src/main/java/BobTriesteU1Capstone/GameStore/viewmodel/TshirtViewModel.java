@@ -1,11 +1,12 @@
-package BobTriesteU1Capstone.GameStore.model;
+package BobTriesteU1Capstone.GameStore.viewmodel;
+
+import BobTriesteU1Capstone.GameStore.model.Tshirt;
 
 import java.math.BigDecimal;
 import java.util.Objects;
 
-public class Tshirt {
-
-    private static int tshirtId;
+public class TshirtViewModel {
+    private int tshirtId;
     private String size;
     private String color;
     private String description;
@@ -64,7 +65,7 @@ public class Tshirt {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Tshirt that = (Tshirt) o;
+        TshirtViewModel that = (TshirtViewModel) o;
         return tshirtId == that.tshirtId &&
                 size == that.size &&
                 color == that.color &&

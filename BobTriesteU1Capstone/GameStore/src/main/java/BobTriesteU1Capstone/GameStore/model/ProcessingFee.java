@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class ProcessingFee {
 
-    public BigDecimal rate;
+    private BigDecimal rate;
     private String state;
     private String productType;
     private BigDecimal fee;

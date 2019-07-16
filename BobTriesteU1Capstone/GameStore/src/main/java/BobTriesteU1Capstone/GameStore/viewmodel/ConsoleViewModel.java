@@ -1,15 +1,22 @@
-package BobTriesteU1Capstone.GameStore.model;
+package BobTriesteU1Capstone.GameStore.viewmodel;
+
+import BobTriesteU1Capstone.GameStore.model.Console;
 
 import java.math.BigDecimal;
 import java.util.Objects;
-
-public class Console {
+import javax.validation.constraints.NotEmpty;
+public class ConsoleViewModel {
 
     private int gameId;
+    @NotEmpty(message = "Please supply a value for model")
     private String model;
+    @NotEmpty(message = "Please supply a value for manufacturer")
     private String manufacturer;
+    @NotEmpty(message = "Please supply a value for first memory amount")
     private String memoryAmount;
+    @NotEmpty(message = "Please supply a value for processor")
     private String processor;
+    @NotEmpty(message = "Please supply a value for price")
     private BigDecimal price;
     private int quantity;
 
@@ -68,11 +75,12 @@ public class Console {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Console that = (Console) o;
+        ConsoleViewModel that = (ConsoleViewModel) o;
         return gameId == that.gameId &&
                 model == that.model &&
                 manufacturer == that.manufacturer &&
@@ -86,6 +94,4 @@ public class Console {
     public int hashCode() {
         return Objects.hash(gameId, model, manufacturer, memoryAmount, processor, price, quantity);
     }
-
-
 }

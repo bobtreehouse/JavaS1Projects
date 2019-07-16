@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -16,34 +17,22 @@ public class ProcessingFeeJdbcTemplateImpl implements ProcessingFeeDao {
     private JdbcTemplate jdbcTemplate;
 
 
-
     private static final String GET_PROCESSINGFEE_SQL =
             "select * from processing_fee where product_type = ?";
+
+
 
     private static final String SELECT_ALL_PROCESSINGFEES_SQL =
             "select * from processing_fee";
 
-    private static final String UPDATE_PROCESSINGFEE_SQL =
-            "update processing_fee set product_type = ?, fee = ? where product_type = ?";
 
-    private static final String DELETE_PROCESSINGFEE_SQL =
-            "delete from processing_fee where product_type = ?";
 
     @Autowired
     public ProcessingFeeJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-//    @Override
-//    @Transactional
-//    public ProcessingFee getProcessingFee(ProcessingFee processingFee) {
-//        jdbcTemplate.update(GET_PROCESSINGFEE_SQL,
-//
-//                processingFee.getProductType(),
-//                processingFee.getFee());
-//
-//        return processingFee;
-//    }
+
 
     @Override
     @Transactional
@@ -63,19 +52,8 @@ public class ProcessingFeeJdbcTemplateImpl implements ProcessingFeeDao {
         return jdbcTemplate.query(SELECT_ALL_PROCESSINGFEES_SQL, this::mapRowToProcessingFee );
     }
 
-    @Override
-    public void updateProcessingFee (ProcessingFee  processingFee ) {
-        jdbcTemplate.update(
-                UPDATE_PROCESSINGFEE_SQL,
-                processingFee.getProductType(),
-                processingFee.getFee());
 
-    }
 
-    @Override
-    public void deleteProcessingFee(int processingFee) {
-        jdbcTemplate.update(DELETE_PROCESSINGFEE_SQL);
-    }
 
     private ProcessingFee mapRowToProcessingFee (ResultSet rs, int rowNum) throws SQLException {
         ProcessingFee processingFee = new ProcessingFee();

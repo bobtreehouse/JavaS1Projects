@@ -1,0 +1,100 @@
+﻿Game Store Project
+This project involves creating a simple database backed REST inventory management web service for a Video Game Store using Agile development techniques in a solo setting. You are responsible for designing and documenting the REST API and implementing the controller, service, layer, DAO, Java data objects, and unit tests for the application based on an existing database structure.
+
+Structure
+Your solution must have the following structural elements:
+
+Your solution must be in an IntelliJ project called FirstNameLastNameU1Capstone where FirstName and LastName are your first and last names respectively.
+Your project must be built using Spring Boot and Spring MVC. Initialize your project using start.spring.io
+Your solution must include a DAO the utilized JdbcTemplates and Prepared Statements
+Your REST API must be documented with Swagger
+Your REST API must accept and return data in JSON format where appropriate
+You must implement ControllerAdvice to handle exceptions and return propery HTTP status codes and data when exception occur. This includes handling all violoations of business rules.
+Methodology
+You must manage your work in Pivotal Tracker
+You must create stories and epics
+You must estimate your work using story points
+You must use a Test Driven Development approach (inluding Red/Green/Refactor) for your code
+You must use JUnit for unit and integration tests
+Your design must include a Service Layer
+Your unit test suite should utilize mock objects where appropriate
+You should utilize JSR303 for input validation
+Requirements/Features
+This system must manage the inventory of video games, game consoles, and t-shirts.
+
+Your REST API must allow the end user to:
+Games:
+Perform standard CRUD operations for Games
+Search for Games by Studio
+Search for Games by ESRB Rating
+Search for Games by Title
+You must create a separate DAO for Games
+Consoles:
+Perform standard CRUD operations for Consoles
+Search for Consoles by Manufacturer
+You must create a separate DAO for Consoles
+T-Shirts:
+Perform standard CRUD operations for T-Shirts
+Search for T-Shirts by Color
+Search for T-Shirts by Size
+You must create a separate DAO for T-Shirts
+Purchasing Items:
+User should be able to purchase items in inventory by supplying the following information to the endpoint:
+Name
+Street
+City
+Zip
+Item Type
+Item ID
+Quantity
+The endpoint returns invoice data based on the invoice table below.
+All invoice calculations must be done in the Service Layer.
+You must create a DAO for both taxes and processing fees.
+
+
+----
+
+console ;
+  private String model;
+    private String manufacturer;
+    private String memoryAmount;
+    private String processor;
+    private BigDecimal price;
+    private int quantity;
+
+
+    private String title;
+    private String esrb_rating;
+    private String description;
+    private BigDecimal price;
+    private String studio;
+    private int quantity;
+
+  private String name;
+    private String street;
+    private String city;
+    private String state;
+    private String zipcode;
+    private String itemType;
+    private int itemId;
+    private BigDecimal unitPrice;
+    private int quantity;
+    private BigDecimal subtotal;
+    private BigDecimal tax;
+    private BigDecimal processiongFee;
+    private BigDecimal total;
+
+
+public BigDecimal rate;
+    private String state;
+    private String productType;
+    private BigDecimal fee;
+
+tshirt
+
+private int tshirtId;
+    private String size;
+    private String color;
+    private String description;
+    private BigDecimal price;
+    private int quantity;

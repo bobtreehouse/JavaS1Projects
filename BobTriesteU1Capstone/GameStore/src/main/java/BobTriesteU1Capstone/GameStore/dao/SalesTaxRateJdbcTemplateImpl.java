@@ -6,6 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -15,19 +16,13 @@ public class SalesTaxRateJdbcTemplateImpl implements SalesTaxRateDao {
 
     private JdbcTemplate jdbcTemplate;
 
-
-
     private static final String GET_SALESTAXRATE_SQL =
             "select * from sales_tax_rate where state = ?";
 
-    private static final String SELECT_ALL_SALESTAXRATES_SQL =
+    private static final String GET_ALL_SALESTAXRATES_SQL =
             "select * from sales_tax_rate";
 
-    private static final String UPDATE_SALESTAXRATE_SQL =
-            "update sales_tax_rate set state = ?, rate = ? where state = ?";
 
-    private static final String DELETE_SALESTAXRATE =
-            "delete from sales_tax_rate where state = ?";
 
     @Autowired
     public SalesTaxRateJdbcTemplateImpl(JdbcTemplate jdbcTemplate) {
@@ -37,9 +32,9 @@ public class SalesTaxRateJdbcTemplateImpl implements SalesTaxRateDao {
 
     @Override
     @Transactional
-    public SalesTaxRate getSalesTaxRate(int id) {
+    public SalesTaxRate getSalesTaxRate(String state) {
         try {
-            return jdbcTemplate.queryForObject(GET_SALESTAXRATE_SQL, this::mapRowToSalesTaxRate, id);
+            return jdbcTemplate.queryForObject(GET_SALESTAXRATE_SQL, this::mapRowToSalesTaxRate);
         } catch (EmptyResultDataAccessException e) {
             // if there is no match for this console return null
             return null;
@@ -47,25 +42,11 @@ public class SalesTaxRateJdbcTemplateImpl implements SalesTaxRateDao {
     }
 
 
+
     @Override
     public List<SalesTaxRate> getAllSalesTaxRates() {
-
-        return jdbcTemplate.query(SELECT_ALL_SALESTAXRATES_SQL, this::mapRowToSalesTaxRate);
-    }
-
-    @Override
-    public void updateSalesTaxRate (SalesTaxRate salesTaxRate) {
-        jdbcTemplate.update(
-                UPDATE_SALESTAXRATE_SQL,
-                salesTaxRate.getState(),
-                salesTaxRate.getRate());
-
-
-    }
-
-    @Override
-    public void deleteSalesTaxRate(int gameid) {
-        jdbcTemplate.update(DELETE_SALESTAXRATE, gameid);
+        jdbcTemplate.update(GET_ALL_SALESTAXRATES_SQL);
+        return getAllSalesTaxRates();
     }
 
     private SalesTaxRate mapRowToSalesTaxRate(ResultSet rs, int rowNum) throws SQLException {

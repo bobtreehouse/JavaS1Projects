@@ -28,10 +28,9 @@ public class SalesTaxRate {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ProcessingFee that = (ProcessingFee) o;
-        final boolean b = state.equals(that.getState()) &&
-                rate == that.rate;
-                return b;
+        SalesTaxRate salesTaxRate = (SalesTaxRate) o;
+        return state == salesTaxRate.state &&
+                rate.equals(salesTaxRate.rate);
 
     }
 
