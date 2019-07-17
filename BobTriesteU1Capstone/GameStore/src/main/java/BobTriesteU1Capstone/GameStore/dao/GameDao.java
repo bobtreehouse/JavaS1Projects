@@ -14,7 +14,15 @@ public interface GameDao {
 
     List<Game> getAllGames();
 
+
+
+    List<Game> getGameByESRBRating(String string);
+
+    List<Game> getGameByTitle(String string);
+
     void updateGame(Game game);
+
+    List<Game> getGamesByStudio(String studio);
 
     void deleteGame(int id);
 

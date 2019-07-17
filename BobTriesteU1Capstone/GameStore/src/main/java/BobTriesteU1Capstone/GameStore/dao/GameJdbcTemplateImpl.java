@@ -27,6 +27,16 @@ public class GameJdbcTemplateImpl implements GameDao{
     private static final String SELECT_ALL_GAMES_SQL =
             "select * from game";
 
+    private static  final String GET_GAMES_BY_STUDIO_SQL =
+            "select * from game where studio = ?";
+
+
+    private static final String SELECT_GAME_BY_ESRBRATING_SQL =
+            "select * from game where studio = ?";
+
+    private static final String SELECT_GAME_BY_Title_SQL =
+            "select * from game where studio = ?";
+
     private static final String UPDATE_GAME_SQL =
             "update game set title = ?, esrb_rating = ?, description = ?, price = ?, studio = ?, quantity=? where game_id = ?";
 
@@ -85,6 +95,21 @@ public class GameJdbcTemplateImpl implements GameDao{
                 game.getStudio(),
                 game.getQuantity());
 
+    }
+
+    @Override
+    public List<Game> getGamesByStudio(String studio) {
+        return jdbcTemplate.query(GET_GAMES_BY_STUDIO_SQL, this::mapRowToGame, studio);
+    }
+
+    @Override
+    public List<Game> getGameByTitle(String string) {
+        return jdbcTemplate.query(SELECT_GAME_BY_Title_SQL, this::mapRowToGame, string);
+    }
+
+    @Override
+    public List<Game> getGameByESRBRating(String string) {
+        return jdbcTemplate.query(SELECT_GAME_BY_ESRBRATING_SQL, this::mapRowToGame, string);
     }
 
     @Override

@@ -139,5 +139,83 @@ public class GameJdbcTemplateImplTest {
 
     }
 
+    @Test
+    public void getGamesByStudio() {
+        Game game = new Game();
+
+        game.setTitle("Madden2018");
+        game.setEsrb_rating("E");
+        game.setDescription("A dance rhythm game developed by Ubisoft");
+        game.setPrice(new BigDecimal("19.99"));
+        game.setStudio("EA");
+        game.setQuantity(5);
+
+        game = gameDao.addGame(game);
+
+
+        Game game1 = new Game();
+        game1.setTitle("Madden II");
+        game1.setEsrb_rating("E");
+        game1.setDescription("A dance rhythm game developed by Ubisoft");
+        game1.setPrice(new BigDecimal("14.99"));
+        game1.setStudio("EA");
+        game1.setQuantity(3);
+
+        gameDao.addGame(game1);
+
+        List<Game> gameList = gameDao.getGamesByStudio(game.getStudio());
+        assertEquals(1, gameList.size());
+    }
+
+
+    @Test
+    public void getGameByESRBRating() {
+        Game game = new Game();
+        game.setTitle("Adventures Of Eric and Michael");
+        game.setEsrb_rating("Mature");
+        game.setDescription("Dumb adventures of Eric and Michael.");
+        game.setPrice(new BigDecimal("30.00"));
+        game.setStudio("Sega");
+        game.setQuantity(44);
+
+        game = gameDao.addGame(game);
+
+        Game game1 = new Game();
+        game.setTitle("Adventures of Perri");
+        game.setEsrb_rating("Mature");
+        game.setDescription("Lt. Love Adventures");
+        game.setPrice(new BigDecimal("35.00"));
+        game.setStudio("343 Industries");
+        game.setQuantity(44);
+        gameDao.updateGame(game);
+
+        List<Game>gameList = gameDao.getGameByESRBRating(game.getEsrb_rating());
+        assertEquals(0, gameList.size());
+    }
+
+    @Test
+    public void getGameByTitle() {
+        Game game = new Game();
+        game.setTitle("Adventures Kwok Kwok");
+        game.setEsrb_rating("E");
+        game.setDescription("Adventures of Billy and Mandy is a role-playing-game.");
+        game.setPrice(new BigDecimal("17.00"));
+        game.setStudio("Razer");
+        game.setQuantity(4);
+
+        game = gameDao.addGame(game);
+
+        Game game1 = new Game();
+        game.setEsrb_rating("M");
+        game.setDescription("Pluto Explorer");
+        game.setPrice(new BigDecimal("36.00"));
+        game.setStudio("Rakuten");
+        game.setQuantity(5);
+        gameDao.updateGame(game);
+
+        List<Game>gameList = gameDao.getGamesByStudio(game.getStudio());
+        assertEquals(1, gameList.size());
+    }
+
 
 }
