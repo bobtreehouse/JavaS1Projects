@@ -20,12 +20,12 @@ public class ConsoleViewModel {
     private BigDecimal price;
     private int quantity;
 
-    public int getGameId() {
+    public int getConsoleId() {
         return consoleId;
     }
 
-    public void setGameId(int gameId) {
-        this.consoleId = gameId;
+    public void setConsoleId(int gameId) {
+        this.consoleId = consoleId;
     }
 
     public String getModel() {

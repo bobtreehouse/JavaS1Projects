@@ -55,35 +55,35 @@ public class InvoiceInventoryServiceTest {
             setUpProcessingFeeDaoDaoMock();
             setUpSalesTaxRateDaoMock();
 
-            invoiceInventoryService = new InvoiceInventoryService(customerDao,invoiceDao,invoiceItemDao,itemDao);
+            invoiceInventoryService = new InvoiceInventoryService(customerDao,invoiceDao,ConsoleDao,itemDao);
         }
 
-        private void setUpInvoiceItemDaoMock() {
+        private void setUpConsoleDaoMock() {
 
-            invoiceItemDao = mock(InvoiceItemDaoJdbcTemplateImpl.class);
+            ConsoleDao = mock(ConsoleDaoJdbcTemplateImpl.class);
 
-            InvoiceItem invoiceItem = new InvoiceItem();
-            invoiceItem.setId(1);
-            invoiceItem.setItemId(42);
-            invoiceItem.setQuantity(3);
-            invoiceItem.setInvoiceId(2);
-            invoiceItem.setUnitRate(new BigDecimal(35).setScale(2));
-            invoiceItem.setDiscount(new BigDecimal(3).setScale(2));
+            Console Console = new Console();
+            Console.setModel(1);
+            Console.setItemId(42);
+            Console.setQuantity(3);
+            Console.setInvoiceId(2);
+            Console.setUnitRate(new BigDecimal(35).setScale(2));
+            Console.setDiscount(new BigDecimal(3).setScale(2));
 
-            InvoiceItem invoiceItem1 = new InvoiceItem();
+            Console Console1 = new Console();
 
-            invoiceItem1.setItemId(42);
-            invoiceItem1.setQuantity(3);
-            invoiceItem1.setInvoiceId(2);
-            invoiceItem1.setUnitRate(new BigDecimal(35).setScale(2));
-            invoiceItem1.setDiscount(new BigDecimal(3).setScale(2));
+            Console1.setItemId(42);
+            Console1.setQuantity(3);
+            Console1.setInvoiceId(2);
+            Console1.setUnitRate(new BigDecimal(35).setScale(2));
+            Console1.setDiscount(new BigDecimal(3).setScale(2));
 
-            List<InvoiceItem> invoiceItemList = new ArrayList<>();
-            invoiceItemList.add(invoiceItem);
+            List<Console> ConsoleList = new ArrayList<>();
+            ConsoleList.add(Console);
 
-            doReturn(invoiceItem).when(invoiceItemDao).addInvoiceItem(invoiceItem1);
-            doReturn(invoiceItem).when(invoiceItemDao).getInvoiceItem(1);
-            doReturn(invoiceItemList).when(invoiceItemDao).getAllInvoiceItems();
+            doReturn(Console).when(ConsoleDao).addConsole(Console1);
+            doReturn(Console).when(ConsoleDao).getConsole(1);
+            doReturn(ConsoleList).when(ConsoleDao).getAllConsoles();
         }
 
         private void setUpInvoiceDaoMock() {
@@ -200,18 +200,18 @@ public class InvoiceInventoryServiceTest {
             invoiceViewModel.setReturnDate(LocalDate.of(2010, 1, 18));
             invoiceViewModel.setLateFee(new BigDecimal(3.5).setScale(2));
 
-            InvoiceItem invoiceItem = new InvoiceItem();
-            invoiceItem.setItemId(42);
-            invoiceItem.setQuantity(3);
-            invoiceItem.setInvoiceId(2);
-            invoiceItem.setUnitRate(new BigDecimal(35).setScale(2));
-            invoiceItem.setDiscount(new BigDecimal(3).setScale(2));
-            invoiceItem = invoiceInventoryService.saveInvoiceItem(invoiceItem);
+            Console Console = new Console();
+            Console.setItemId(42);
+            Console.setQuantity(3);
+            Console.setInvoiceId(2);
+            Console.setUnitRate(new BigDecimal(35).setScale(2));
+            Console.setDiscount(new BigDecimal(3).setScale(2));
+            Console = invoiceInventoryService.saveConsole(Console);
 
-            List<InvoiceItem> invoiceItems = new ArrayList<>();
-            invoiceItems.add(invoiceItem);
+            List<Console> Consoles = new ArrayList<>();
+            Consoles.add(Console);
 
-            invoiceViewModel.setInvoiceItems(invoiceItems);
+            invoiceViewModel.setConsoles(Consoles);
 
             invoiceViewModel = invoiceInventoryService.saveInvoice(invoiceViewModel);
 
@@ -230,18 +230,18 @@ public class InvoiceInventoryServiceTest {
             invoiceViewModel.setReturnDate(LocalDate.of(2010, 1, 18));
             invoiceViewModel.setLateFee(new BigDecimal(3.5).setScale(2));
 
-            InvoiceItem invoiceItem = new InvoiceItem();
-            invoiceItem.setItemId(42);
-            invoiceItem.setQuantity(3);
-            invoiceItem.setInvoiceId(2);
-            invoiceItem.setUnitRate(new BigDecimal(35).setScale(2));
-            invoiceItem.setDiscount(new BigDecimal(3).setScale(2));
-            invoiceItem = invoiceInventoryService.saveInvoiceItem(invoiceItem);
+            Console Console = new Console();
+            Console.setItemId(42);
+            Console.setQuantity(3);
+            Console.setInvoiceId(2);
+            Console.setUnitRate(new BigDecimal(35).setScale(2));
+            Console.setDiscount(new BigDecimal(3).setScale(2));
+            Console = invoiceInventoryService.saveConsole(Console);
 
-            List<InvoiceItem> invoiceItems = new ArrayList<>();
-            invoiceItems.add(invoiceItem);
+            List<Console> Consoles = new ArrayList<>();
+            Consoles.add(Console);
 
-            invoiceViewModel.setInvoiceItems(invoiceItems);
+            invoiceViewModel.setConsoles(Consoles);
 
             invoiceViewModel = invoiceInventoryService.saveInvoice(invoiceViewModel);
 

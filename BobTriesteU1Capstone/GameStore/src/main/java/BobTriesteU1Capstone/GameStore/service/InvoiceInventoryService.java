@@ -2,16 +2,12 @@ package BobTriesteU1Capstone.GameStore.service;
 
 import BobTriesteU1Capstone.GameStore.dao.*;
 import BobTriesteU1Capstone.GameStore.model.*;
-import BobTriesteU1Capstone.GameStore.viewmodel.InvoiceViewModel;
-import BobTriesteU1Capstone.GameStore.viewmodel.ConsoleViewModel;
-import BobTriesteU1Capstone.GameStore.viewmodel.GameViewModel;
-import BobTriesteU1Capstone.GameStore.viewmodel.ProcessingFeeViewModel
-import BobTriesteU1Capstone.GameStore.viewmodel.SalesTaxViewModel;
+import BobTriesteU1Capstone.GameStore.viewmodel.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import BobTriesteU1Capstone.GameStore.dao.TshirtDao;
 
-im
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,134 +15,78 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-    @Component
-    public class InvoiceInventoryService {
+@Component
+public class InvoiceInventoryService {
 
-        ConsoleDao consoleDao;
-        GameDao gameDao;
-        InvoiceDao invoiceDao;
-        ProcessingFeeDao processingFeeDao;
-        SalesTaxRateDao salesTaxRateDao;
-        TshirtDao tshirtDao;
+    ConsoleDao consoleDao;
+    GameDao gameDao;
+    InvoiceDao invoiceDao;
+    ProcessingFeeDao processingFeeDao;
+    SalesTaxRateDao salesTaxRateDao;
+    TshirtDao tshirtDao;
 
 
-        @Autowired
-        public InvoiceInventoryService(ConsoleDao consoleDao, GameDao gameDao, InvoiceDao invoiceDao, ProcessingFeeDao processingFeeDao,
-                                       SalesTaxRateDao salesTaxRateDao, TshirtDao tshirtDao) {
-            this.consoleDao = consoleDao;
-            this.gameDao = gameDao;
-            this.invoiceDao = invoiceDao;
-            this.processingFeeDao = processingFeeDao;
-            this.salesTaxRateDao = salesTaxRateDao;
-        }
+    @Autowired
+    public InvoiceInventoryService(ConsoleDao consoleDao, GameDao gameDao, InvoiceDao invoiceDao, ProcessingFeeDao processingFeeDao,
+                                   SalesTaxRateDao salesTaxRateDao, TshirtDao tshirtDao) {
+        this.consoleDao = consoleDao;
+        this.gameDao = gameDao;
+        this.invoiceDao = invoiceDao;
+        this.processingFeeDao = processingFeeDao;
+        this.salesTaxRateDao = salesTaxRateDao;
+    }
 
-        public ConsoleViewModel saveConsole(ConsoleViewModel consoleViewModel) {
-            Console console = new Console();
-            console.setModel(ConsoleViewModel.getModel());
-            console.setManufacturer(ConsoleViewModel.getManufacturer());
-            console.setMemoryAmount(ConsoleViewModel.getMemoryAmount());
-            console.setProcessor(ConsoleViewModel.getProcessor());
-            console.setPrice(ConsoleViewModel.getPrice());
-            console.setQuantity(ConsoleViewModel.getQuantity());
-            console =  consoleDao.addConsole(console);
 
-            ConsoleViewModel.setConsoleId(console.getId());
-            return consoleViewModel;
-        }
 
-        public void updateCustomer(CustomerViewModel customerViewModel)
-        {
-            Customer customer = new Customer();
-            customer.setId(customerViewModel.getId());
-            customer.setFirstName(customerViewModel.getFirstName());
-            customer.setLastName(customerViewModel.getLastName());
-            customer.setPhone(customerViewModel.getPhone());
-            customer.setCompany(customerViewModel.getCompany());
-            customer.setEmail(customerViewModel.getEmail());
+    public void removeItem(int id)
+    {
+        itemDao.deleteItem(id);
+    }
 
-            customerDao.updateCustomer(customer);
-        }
+    public void updateItem(GameViewModel itemViewModel)
+    {
+        Item item = new Item();
+        item.setId(itemViewModel.getId());
+        item.setName(itemViewModel.getName());
+        item.setDescription(itemViewModel.getDescription());
+        item.setDailyRate(itemViewModel.getDailyRate());
+        itemDao.updateItem(item);
+    }
 
-        public CustomerViewModel findCustomerbyId(int id) {
-            Customer customer =  customerDao.getCustomer(id);
-            if(customer == null)
-                return null;
-            else
-                return buildCustomerViewModel(customer);
-        }
+    @Transactional
+    public InvoiceViewModel saveInvoice(InvoiceViewModel invoiceViewModel) {
 
-        public void removeCustomer(int id)
-        {
-            customerDao.deleteCustomer(id);
-        }
+        Invoice invoice = new Invoice();
+        invoice.setName(invoiceViewModel.getName());
+        invoice.setStreet(invoiceViewModel.getStreet());
+        invoice.setCity(invoiceViewModel.getCity());
+        invoice.setState(invoiceViewModel.getState());
+        invoice.setZipcode(invoiceViewModel.getZipcode());
+        invoice.setItemId(invoiceViewModel.getItemId());
+        invoice.setItemType(invoiceViewModel.getItemType());
+        invoice.setUnitPrice(invoiceViewModel.getUnitPrice());
+        invoice.setQuantity(invoiceViewModel.getQuantity());
+        invoice.setSubtotal(invoiceViewModel.getSubtotal());
+        invoice.setProcessiongFee(invoiceViewModel.getProcessiongFee());
+        invoice.setTax(invoiceViewModel.getTax());
+        invoice.setTotal(invoiceViewModel.getTotal());
+        invoice.setInvoiceId(invoiceViewModel.getInvoiceId());
 
-        public ItemViewModel saveItem(ItemViewModel itemViewModel)
-        {
-            Item item = new Item();
-            item.setName(itemViewModel.getName());
-            item.setDescription(itemViewModel.getDescription());
-            item.setDailyRate(itemViewModel.getDailyRate());
+        invoice = invoiceDao.addInvoice(invoice);
 
-            item =  itemDao.addItem(item);
-            itemViewModel.setId(item.getId());
-            return itemViewModel;
-        }
 
-        public ItemViewModel findItem(int id)
-        {
-            Item item = itemDao.getItem(id);
-            if(item != null)
-            {
-                ItemViewModel itemViewModel = new ItemViewModel();
-                itemViewModel.setId(item.getId());
-                itemViewModel.setDailyRate(item.getDailyRate());
-                itemViewModel.setDescription(item.getDescription());
-                itemViewModel.setName(item.getName());
 
-                return itemViewModel;
-            }
-            else return null;
+        List<Invoice> Invoices = invoiceViewModel.invoices();
+        Invoices.stream().forEach(Invoice -> {
+            Invoice.setInvoiceId(invoiceViewModel.getInvoiceId());
+            InvoiceDao.addInvoice(Invoice);
+        });
 
-        }
+        Invoices = InvoiceDao.get(invoice.getId());
+        invoiceViewModel.setInvoices(Invoices);
 
-        public void removeItem(int id)
-        {
-            itemDao.deleteItem(id);
-        }
-
-        public void updateItem(ItemViewModel itemViewModel)
-        {
-            Item item = new Item();
-            item.setId(itemViewModel.getId());
-            item.setName(itemViewModel.getName());
-            item.setDescription(itemViewModel.getDescription());
-            item.setDailyRate(itemViewModel.getDailyRate());
-            itemDao.updateItem(item);
-        }
-
-        @Transactional
-        public InvoiceViewModel saveInvoice(InvoiceViewModel invoiceViewModel) {
-
-            Invoice invoice = new Invoice();
-            invoice.setReturnDate(invoiceViewModel.getReturnDate());
-            invoice.setOrderDate(invoiceViewModel.getOrderDate());
-            invoice.setPickupDate(invoiceViewModel.getPickupDate());
-            invoice.setLateFee(invoiceViewModel.getLateFee());
-            invoice.setCustomerId(invoiceViewModel.getCustomerId());
-            invoice = invoiceDao.addInvoice(invoice);
-            invoiceViewModel.setId(invoice.getId());
-
-            List<InvoiceItem> invoiceItems = invoiceViewModel.getInvoiceItems();
-            invoiceItems.stream().forEach(invoiceItem -> {
-                invoiceItem.setInvoiceId(invoiceViewModel.getId());
-                invoiceItemDao.addInvoiceItem(invoiceItem);
-            });
-
-            invoiceItems = invoiceItemDao.getInvoiceItemsByInvoice(invoice.getId());
-            invoiceViewModel.setInvoiceItems(invoiceItems);
-
-            return invoiceViewModel;
-        }
+        return invoiceViewModel;
+    }
     /*
     @Transactional
     public void updateInvoice(InvoiceViewModel invoiceViewModel) {
@@ -156,81 +96,86 @@ import java.util.List;
         invoice.setOrderDate(invoiceViewModel.getOrderDate());
         invoice.setPickupDate(invoiceViewModel.getPickupDate());
         invoice.setLateFee(invoiceViewModel.getLateFee());
-        invoice.setCustomerId(invoiceViewModel.getCustomerId());
+        invoice.setConsoleId(invoiceViewModel.getConsoleId());
         invoiceDao.updateInvoice(invoice);
 
-        List<InvoiceItem> invoiceItems = invoiceItemDao.getInvoiceItemsByInvoice(invoice.getId());
-        invoiceItems.stream().forEach(invoiceItem -> {
-            invoiceItemDao.deleteInvoiceItem(invoiceItem.getId());
+        List<Invoice> Invoices = InvoiceDao.getInvoicesByInvoice(invoice.getId());
+        Invoices.stream().forEach(Invoice -> {
+            InvoiceDao.deleteInvoice(Invoice.getId());
         });
 
-        invoiceItems = invoiceViewModel.getInvoiceItems();
-        invoiceItems.stream().forEach(invoiceItem -> {
-            invoiceItem.setInvoiceId(invoiceViewModel.getId());
-            invoiceItem = invoiceItemDao.addInvoiceItem(invoiceItem);
+        Invoices = invoiceViewModel.getInvoices();
+        Invoices.stream().forEach(Invoice -> {
+            Invoice.setInvoiceId(invoiceViewModel.getId());
+            Invoice = InvoiceDao.addInvoice(Invoice);
 
         });
     }*/
 
-        public InvoiceViewModel findInvoice(int id) {
-            Invoice invoice = invoiceDao.getInvoice(id);
-            if(invoice == null )
-                return null;
-            else
-                return buildInvoiceViewModel(invoice);
-        }
-
-        public List<InvoiceViewModel> findInvoiceByCustomer(int customerId)
-        {
-            List<Invoice> invoices = invoiceDao.getInvoiceByCutomer(customerId);
-            List<InvoiceViewModel> invoiceViewModels = new ArrayList<>();
-
-            for (Invoice invoice: invoices) {
-                invoiceViewModels.add(buildInvoiceViewModel(invoice));
-            }
-            return invoiceViewModels;
-        }
-
-        public void removeInvoice(int id)
-        {
-            List<InvoiceItem> invoiceItems = invoiceItemDao.getInvoiceItemsByInvoice(id);
-            for (InvoiceItem invoiceitem: invoiceItems) {
-                invoiceItemDao.deleteInvoiceItem(invoiceitem.getId());
-            }
-            invoiceDao.deleteInvoice(id);
-        }
-
-        public InvoiceItem saveInvoiceItem(InvoiceItem invoiceItem) {
-            return invoiceItemDao.addInvoiceItem(invoiceItem);
-        }
-
-        private CustomerViewModel buildCustomerViewModel(Customer customer) {
-            CustomerViewModel customerViewModel = new CustomerViewModel();
-            customerViewModel.setId(customer.getId());
-            customerViewModel.setFirstName(customer.getFirstName());
-            customerViewModel.setLastName(customer.getLastName());
-            customerViewModel.setCompany(customer.getCompany());
-            customerViewModel.setEmail(customer.getEmail());
-            customerViewModel.setPhone(customer.getPhone());
-
-            return customerViewModel;
-        }
-
-        private InvoiceViewModel buildInvoiceViewModel(Invoice invoice) {
-
-            InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
-            invoiceViewModel.setId(invoice.getId());
-            invoiceViewModel.setReturnDate(invoice.getReturnDate());
-            invoiceViewModel.setOrderDate(invoice.getOrderDate());
-            invoiceViewModel.setPickupDate(invoice.getPickupDate());
-            invoiceViewModel.setLateFee(invoice.getLateFee());
-
-            Customer customer = customerDao.getCustomer(invoice.getCustomerId());
-            invoiceViewModel.setCustomerId(customer.getId());
-
-            List<InvoiceItem> invoiceItems = invoiceItemDao.getInvoiceItemsByInvoice(invoice.getId());
-            invoiceViewModel.setInvoiceItems(invoiceItems);
-            return invoiceViewModel;
-        }
+    public InvoiceViewModel findInvoice(int id) {
+        Invoice invoice = invoiceDao.getInvoice(id);
+        if(invoice == null )
+            return null;
+        else
+            return buildInvoiceViewModel(invoice);
     }
+
+    public List<InvoiceViewModel> findInvoiceByConsole(int ConsoleId)
+    {
+        List<Invoice> invoices = invoiceDao.getInvoiceByCutomer(ConsoleId);
+        List<InvoiceViewModel> invoiceViewModels = new ArrayList<>();
+
+        for (Invoice invoice: invoices) {
+            invoiceViewModels.add(buildInvoiceViewModel(invoice));
+        }
+        return invoiceViewModels;
+    }
+
+    public void removeInvoice(int id)
+    {
+        List<Invoice> Invoices = InvoiceDao.getInvoicesByInvoice(id);
+        for (Invoice Invoice: Invoices) {
+            InvoiceDao.deleteInvoice(Invoice.getId());
+        }
+        invoiceDao.deleteInvoice(id);
+    }
+
+    public Invoice saveInvoice(Invoice Invoice) {
+        return InvoiceDao.addInvoice(Invoice);
+    }
+
+
+
+    private InvoiceViewModel buildInvoiceViewModel(Invoice invoice) {
+
+        InvoiceViewModel invoiceViewModel = new InvoiceViewModel();
+        invoiceViewModel.setId(invoice.getId());
+        invoiceViewModel.setReturnDate(invoice.getReturnDate());
+        invoiceViewModel.setOrderDate(invoice.getOrderDate());
+        invoiceViewModel.setPickupDate(invoice.getPickupDate());
+        invoiceViewModel.setLateFee(invoice.getLateFee());
+
+        Console Console = ConsoleDao.getConsole(invoice.getConsoleId());
+        invoiceViewModel.setConsoleId(Console.getId());
+
+        List<Invoice> Invoices = InvoiceDao.getInvoicesByInvoice(invoice.getId());
+        invoiceViewModel.setInvoices(Invoices);
+        return invoiceViewModel;
+    }
+
+
+    private ConsoleViewModel buildGameViewModel(Game  game) {
+        GameViewModel gameViewModel = new GameViewModel();
+        GameViewModel.setId(Game.getId());
+        GameViewModel.setFirstName(Game.getFirstName());
+        GameViewModel.setLastName(Game.getLastName());
+        GameViewModel.setCompany(Game.getCompany());
+        GameViewModel.setEmail(Game.getEmail());
+        GameViewModel.setPhone(Game.getPhone());
+
+        return GameViewModel;
+    }
+
+
+}
 
