@@ -20,24 +20,15 @@ import java.util.List;
 
 public class GameService {
 
-    ConsoleDao consoleDao;
     GameDao gameDao;
-    InvoiceDao invoiceDao;
-    ProcessingFeeDao processingFeeDao;
-    SalesTaxRateDao salesTaxRateDao;
-    TshirtDao tshirtDao;
 
 
     @Autowired
-    public GameService(ConsoleDao consoleDao, GameDao gameDao, InvoiceDao invoiceDao, ProcessingFeeDao processingFeeDao,
-                                   SalesTaxRateDao salesTaxRateDao, TshirtDao tshirtDao) {
-        this.consoleDao = consoleDao;
-        this.gameDao = gameDao;
-        this.invoiceDao = invoiceDao;
-        this.processingFeeDao = processingFeeDao;
-        this.salesTaxRateDao = salesTaxRateDao;
-    }
+    public GameService(GameDao gameDao) {
 
+        this.gameDao = gameDao;
+
+    }
 
     public GameViewModel saveGame(GameViewModel gameViewModel) {
         Game game = new Game();
@@ -83,14 +74,14 @@ public class GameService {
     }
 
     public GameViewModel findGameById(int id) {
-        Game game = consoleDao.getConsole(int id);
+        Game game = gameDao.getGame(id);
         if (game == null)
             return null;
         else
             return buildGameViewModel(game);
     }
 
-    public void removeCGame(int id) {
-        gameDao.deleteGame(int id);
+    public void removeGame(int id) {
+        gameDao.deleteGame(id);
     }
 }

@@ -18,64 +18,70 @@ import java.util.List;
 @Component
 public class TshirtService {
 
-    ConsoleDao consoleDao;
-    GameDao gameDao;
-    InvoiceDao invoiceDao;
+
     TshirtDao tshirtDao;
 
     @Autowired
-    public InvoiceInventoryService(ConsoleDao consoleDao, GameDao gameDao, InvoiceDao invoiceDao, ProcessingFeeDao processingFeeDao,
-                                   SalesTaxRateDao salesTaxRateDao, TshirtDao tshirtDao) {
-        this.consoleDao = consoleDao;
-        this.gameDao = gameDao;
-        this.invoiceDao = invoiceDao;
+    public TshirtService(TshirtDao tshirtDao) {
+
+        this.tshirtDao = tshirtDao;
+
 
     }
-
-    public TshirtViewModel updateTshirt(TshirtViewModel tshirtViewModel) {
-        Tshirt tshirt = new Tshirt();
-        tshirt.setSize(tshirtViewModel.getSize());
-        tshirt.setColor(tshirtViewModel.getColor());
-        tshirt.setDescription(tshirtViewModel.getDescription());
-        tshirt.setPrice(tshirtViewModel.getPrice());
-        tshirt.setPrice(tshirtViewModel.getPrice());
-        tshirt.setQuantity(tshirtViewModel.getQuantity());
-        tshirt =  tshirtDao.addTshirt(tshirt);
-
-        tshirtViewModel.setTshirtId(tshirt.getTshirtId());
-        return tshirtViewModel;
-    }
-
-    private InvoiceViewModel buildTshirtViewModel(Invoice invoice) {
-
-        Tshirt tshirt = new Tshirt();
-        tshirtViewModel.setId(invoice.getId());
-        TshirtViewModel.setReturnDate(invoice.getReturnDate());
-        TshirtViewModel.setOrderDate(invoice.getOrderDate());
-        TshirtViewModel.setPickupDate(invoice.getPickupDate());
-        TshirtViewModel.setLateFee(invoice.getLateFee());
-
-        Console Console = ConsoleDao.getConsole(invoice.getConsoleId());
-        invoiceViewModel.setConsoleId(Console.getId());
-
-        List<Invoice> Invoices = InvoiceDao.getInvoicesByInvoice(invoice.getId());
-        invoiceViewModel.setInvoices(Invoices);
-        return TshirtViewModel;
-    }
-
-
     public TshirtViewModel saveTshirt(TshirtViewModel tshirtViewModel) {
         Tshirt tshirt = new Tshirt();
         tshirt.setSize(tshirtViewModel.getSize());
         tshirt.setColor(tshirtViewModel.getColor());
         tshirt.setDescription(tshirtViewModel.getDescription());
         tshirt.setPrice(tshirtViewModel.getPrice());
-        tshirt.setPrice(tshirtViewModel.getPrice());
+
         tshirt.setQuantity(tshirtViewModel.getQuantity());
-        tshirt =  tshirtDao.addTshirt(tshirt);
+        tshirt = tshirtDao.addTshirt(tshirt);
 
         tshirtViewModel.setTshirtId(tshirt.getTshirtId());
         return tshirtViewModel;
     }
+
+
+    public void updateTshirt(TshirtViewModel tshirtViewModel) {
+        Tshirt tshirt = new Tshirt();
+        tshirt.setSize(tshirtViewModel.getSize());
+        tshirt.setColor(tshirtViewModel.getColor());
+        tshirt.setDescription(tshirtViewModel.getDescription());
+        tshirt.setPrice(tshirtViewModel.getPrice());
+        tshirt.setQuantity(tshirtViewModel.getQuantity());
+
+        tshirtDao.updateTshirt(tshirt);
+    }
+
+
+    private static TshirtViewModel buildTshirtViewModel(Tshirt tshirt) {
+
+        TshirtViewModel tshirtViewModel = new TshirtViewModel();
+
+        tshirt.setSize(tshirt.getSize());
+        tshirt.setColor(tshirt.getColor());
+        tshirt.setDescription(tshirt.getDescription());
+        tshirt.setPrice(tshirt.getPrice());
+
+        tshirt.setQuantity(tshirt.getQuantity());
+        return tshirtViewModel;
+    }
+
+    public TshirtViewModel getTshirtByColor(int id) {
+        Tshirt tshirt = tshirtDao.getTshirt(id);
+        if (tshirt == null)
+            return null;
+        else
+            return buildTshirtViewModel(tshirt);
+    }
+
+
+    public void removeTshirt(int id) {
+        tshirtDao.deleteTshirt(id);
+    }
+
+
+
 
 }

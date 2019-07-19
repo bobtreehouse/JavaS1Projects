@@ -26,8 +26,7 @@ public class ConsoleService {
 
 
     @Autowired
-    public ConsoleService(ConsoleDao consoleDao, GameDao gameDao, InvoiceDao invoiceDao, ProcessingFeeDao processingFeeDao,
-                          SalesTaxRateDao salesTaxRateDao, TshirtDao tshirtDao) {
+    public ConsoleService(ConsoleDao consoleDao) {
         this.consoleDao = consoleDao;
 
 
@@ -73,8 +72,8 @@ public class ConsoleService {
         return consoleViewModel;
     }
 
-    public ConsoleViewModel findConsoleById(int id) {
-        Console console = consoleDao.getConsole( int id);
+    public ConsoleViewModel getConsole(int id) {
+        Console console = consoleDao.getConsole(id);
         if (console == null)
             return null;
         else
