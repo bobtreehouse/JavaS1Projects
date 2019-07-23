@@ -1,15 +1,13 @@
-package com.trilogyed.vinlookup;
-
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-
-public class VinLookupApplication {
+public class MotoInventoryServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VinLookupApplication.class, args);
+		SpringApplication.run(MotoInventoryServiceApplication.class, args);
 	}
 
 }
