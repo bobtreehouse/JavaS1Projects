@@ -43,10 +43,19 @@ public class MotoInventoryController {
 
         String vinServiceUri = serviceProtocol + instances.get(0).getHost()+":" + instances.get(0).getPort()+ servicePath + vin;
 
-        Map <String, String> vinService = restTemplate.getForObject(vinServiceUri, HashMap.class);
+        Motorcycle motorcycle = restTemplate.getForObject(vinServiceUri, Motorcycle.class);
+
+        Map <String, String> map = new HashMap<>();
+
+        map.put("Type","Motorcycle");
+        map.put("VIN", motorcycle.getVin());
+        map.put("Make",motorcycle.getMake());
+        map.put("Model", motorcycle.getModel());
+        map.put("Color", motorcycle.getColor());
+        map.put("Year", motorcycle.getYear());
 
 
-        return vinService;
+        return map;
     }
         @RequestMapping(value = "/motorcycles", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)

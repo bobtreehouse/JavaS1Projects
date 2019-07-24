@@ -7,15 +7,26 @@ public class VinLookupView {
 
     @NotEmpty(message = "Please supply vehicle type.")
     private String type;
-    @NotEmpty(message = "Please supply vehicle type.")
+    @NotEmpty(message = "Please supply vehicle vin.")
+    private String vin;
+    @NotEmpty(message = "Please supply vehicle make.")
     private String make;
-    @NotEmpty(message = "Please supply vehicle type.")
+    @NotEmpty(message = "Please supply vehicle model.")
     private String model;
-    @NotEmpty(message = "Please supply vehicle type.")
+    @NotEmpty(message = "Please supply vehicle year.")
     private String year;
-    @NotEmpty(message = "Please supply vehicle type.")
+    @NotEmpty(message = "Please supply vehicle color.")
     private String color;
-    @NotEmpty(message = "Please supply vehicle type.")
+    @NotEmpty(message = "Please supply vehicle VIN.")
+    public String getVin() {
+        return vin;
+    }
+
+    public void setVin(String vin) {
+        this.vin = vin;
+    }
+
+
 
     public String getType() {
         return type;
@@ -58,21 +69,20 @@ public class VinLookupView {
     }
 
     @Override
-    public boolean equals (Object o) {
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         VinLookupView that = (VinLookupView) o;
-        return Objects.equals(type, that.type) &&
-                Objects.equals(make, that.make) &&
-                Objects.equals(model, that.model) &&
-                Objects.equals(year, that.year) &&
-                Objects.equals(color, that.color);
-
+        return Objects.equals(getType(), that.getType()) &&
+                Objects.equals(getVin(), that.getVin()) &&
+                Objects.equals(getMake(), that.getMake()) &&
+                Objects.equals(getModel(), that.getModel()) &&
+                Objects.equals(getYear(), that.getYear()) &&
+                Objects.equals(getColor(), that.getColor());
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(type, make, model, year, color);
-
-
+        return Objects.hash(getType(), getVin(), getMake(), getModel(), getYear(), getColor());
     }
 }
