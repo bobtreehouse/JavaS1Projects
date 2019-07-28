@@ -28,7 +28,7 @@ public class TaskerController {
     @RequestMapping (value = "/tasks{id}", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public void getTask(@PathVariable int id)  {
-        service.getTask(id);
+        service.getTask(int id);
     }
 
     @RequestMapping (value = "/tasks{id}", method = RequestMethod.GET)

@@ -3,6 +3,7 @@ package com.trilogyed.tasker.service;
 import com.trilogyed.tasker.dao.TaskerDao;
 import com.trilogyed.tasker.model.Task;
 import com.trilogyed.tasker.model.TaskViewModel;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
 public class TaskerServiceLayer {
 
     TaskerDao dao;
-
+    @Autowired
     public TaskViewModel fetchTask(int id) {
 
         Task task = dao.getTask(id);

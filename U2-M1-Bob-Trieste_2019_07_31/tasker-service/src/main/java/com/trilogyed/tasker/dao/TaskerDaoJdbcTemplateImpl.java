@@ -6,7 +6,8 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
+import java.time.LocalDate;
+import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -96,7 +97,7 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
         task.setCreateDate(rs.getDate("create_date"));
         task.setDueDate(rs.getDate("due_date"));
         task.setCategory(rs.getString("category"));
-
+        task.setAdvertisement(rs.getString("advertisement"));
 
         return task;
     }
