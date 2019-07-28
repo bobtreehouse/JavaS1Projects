@@ -29,11 +29,11 @@ public class TaskerServiceLayer {
         return tvm;
     }
 
-    public List<TaskViewModel> fetchAllTasks() {
+    public List<TaskViewModel> getAllTasks() {
         return null;
     }
 
-    public List<TaskViewModel> fetchTasksByCategory(String category) {
+    public List<TaskViewModel> getTasksByCategory(String category) {
         return null;
     }
 

@@ -51,17 +51,6 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     }
 
     @Override
-    public List<Task> getAllTasks(){
-            return jdbcTemplate.query(SELECT_ALL_TASKS, this::mapRowToTask);
-    }
-
-
-    @Override
-    public List<Task> getTasksByCategory(String category) {
-        return jdbcTemplate.query(SELECT_TASKS_BY_CATEGORY, this::mapRowToTask);
-    }
-
-    @Override
     public Task getTask(int id) {
         try {
             return jdbcTemplate.queryForObject(SELECT_TASK_BY_ID, this::mapRowToTask, id);
@@ -70,6 +59,16 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
         }
     }
 
+    @Override
+    public List<Task> getAllTasks() {
+        return jdbcTemplate.query(SELECT_ALL_TASKS, this::mapRowToTask);
+    }
+
+
+    @Override
+    public List<Task> getTasksByCategory(String category) {
+        return jdbcTemplate.query(SELECT_TASKS_BY_CATEGORY, this::mapRowToTask, category);
+    }
 
     @Override
     public void updateTask(Task task) {
@@ -89,16 +88,15 @@ public class TaskerDaoJdbcTemplateImpl implements TaskerDao {
     }
 
 
-
     private Task mapRowToTask(ResultSet rs, int rowNum) throws SQLException {
         Task task = new Task();
         task.setId(rs.getInt("task_id"));
         task.setDescription(rs.getString("task_description"));
-        task.setCreateDate(rs.getDate("create_date"));
-        task.setDueDate(rs.getDate("due_date"));
+        task.setCreateDate(rs.getDate("create_date").toLocalDate());
+        task.setDueDate(rs.getDate("due_date").toLocalDate());
         task.setCategory(rs.getString("category"));
-        task.setAdvertisement(rs.getString("advertisement"));
-
+        //task.setAdvertisement(rs.getString("advertisement"));
+        // dont have advertisement in DB; that comes from Service
         return task;
     }
 }

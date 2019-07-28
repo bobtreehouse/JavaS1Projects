@@ -1,34 +1,23 @@
 package com.trilogyed.tasker.model;
 
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class Task {
-
     private int id;
+    @NotEmpty(message = "You must supply a value for description")
+    @Size(min = 1, max = 255, message = "Description has to range between 1 character and a max of 255 characters")
     private String description;
+    @NotEmpty(message = "You must enter a date in YYYY/MM/DD format")
     private LocalDate createDate;
+    @NotEmpty(message = "You must enter a date in YYYY/MM/DD format")
     private LocalDate dueDate;
+    @NotEmpty(message = "You must supply a value for category")
+    @Size(min = 1, max = 255, message = "Category has to range between 1 character and a max of 255 characters")
     private String category;
-    private String advertisement;
-
-    public Task(int id, String description, LocalDate createDate, LocalDate dueDate, String category, String advertisement) {
-        this.id = id;
-        this.description = description;
-        this.createDate = createDate;
-        this.dueDate = dueDate;
-        this.category = category;
-        this.advertisement = advertisement;
-    }
-
-    public void setCreateDate(LocalDate createDate) {
-        this.createDate = createDate;
-    }
-
-    public void setDueDate(LocalDate dueDate) {
-        this.dueDate = dueDate;
-    }
 
     public int getId() {
         return id;
@@ -50,17 +39,17 @@ public class Task {
         return createDate;
     }
 
-//    public void setCreateDate(Date createDate) {
-//        this.createDate = createDate;
-//    }
+    public void setCreateDate(LocalDate createDate) {
+        this.createDate = createDate;
+    }
 
     public LocalDate getDueDate() {
         return dueDate;
     }
 
-//    public void setDueDate(Date dueDate) {
-//        this.dueDate = dueDate;
-//    }
+    public void setDueDate(LocalDate dueDate) {
+        this.dueDate = dueDate;
+    }
 
     public String getCategory() {
         return category;
@@ -68,14 +57,6 @@ public class Task {
 
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    public String getAdvertisement() {
-        return advertisement;
-    }
-
-    public void setAdvertisement(String advertisement) {
-        this.advertisement = advertisement;
     }
 
     @Override
@@ -89,9 +70,11 @@ public class Task {
                 Objects.equals(dueDate, task.dueDate) &&
                 Objects.equals(category, task.category);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(id, description, createDate, dueDate, category);
     }
 }
+
 

@@ -7,22 +7,12 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class TaskViewModel {
-
-
-
     private int id;
-    @NotEmpty(message = "You must supply a value for desc.")
-    @Size(min = 5, max = 255, message = "between 5 & 255 characters in length.")
     private String description;
-
-    @NotEmpty(message = "You must supply a value for createDate.")
     private LocalDate createDate;
-
-    @NotEmpty(message = "You must supply a value for dueDate.")
     private LocalDate dueDate;
-
-    @NotEmpty(message = "You must supply a value for category.")
     private String category;
+    private String advertisement;
 
     public int getId() {
         return id;
@@ -64,8 +54,12 @@ public class TaskViewModel {
         this.category = category;
     }
 
+    public String getAdvertisement() {
+        return advertisement;
+    }
 
-
-
+    public void setAdvertisement(String advertisement) {
+        this.advertisement = advertisement;
+    }
 }
 
