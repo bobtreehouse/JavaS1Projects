@@ -22,7 +22,6 @@ public class AdserverController {
     //private Random rnd = new Random();
     public AdserverController() {
 
-
         // some ads
         adList.add("Home Equity Loans @ 3.87% APR");
         adList.add("Click HERE to qualify for a new car loan!");
@@ -34,7 +33,6 @@ public class AdserverController {
         adList.add("Free installation with the purchase of 100 square feet of carpet!");
 
     }
-
 
 
     @RequestMapping(value = "/ad", method = RequestMethod.GET)
