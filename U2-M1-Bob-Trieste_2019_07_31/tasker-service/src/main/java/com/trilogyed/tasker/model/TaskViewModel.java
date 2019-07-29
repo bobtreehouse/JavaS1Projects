@@ -14,6 +14,24 @@ public class TaskViewModel {
     private String category;
     private String advertisement;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TaskViewModel that = (TaskViewModel) o;
+        return getId() == that.getId() &&
+                getDescription().equals(that.getDescription()) &&
+                getCreateDate().equals(that.getCreateDate()) &&
+                getDueDate().equals(that.getDueDate()) &&
+                getCategory().equals(that.getCategory()) &&
+                getAdvertisement().equals(that.getAdvertisement());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getDescription(), getCreateDate(), getDueDate(), getCategory(), getAdvertisement());
+    }
+
     public int getId() {
         return id;
     }

@@ -14,7 +14,7 @@ import java.util.Random;
 @RefreshScope
 public class AdserverController {
 
-    // something to hold our greetings
+    // something to hold our ads
     private List<String> adList = new ArrayList<>();
     // so we can randomly return a greeting
     private Random rnd = new Random();

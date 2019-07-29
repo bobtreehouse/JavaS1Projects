@@ -4,9 +4,12 @@ import com.trilogyed.tasker.dao.TaskerDao;
 import com.trilogyed.tasker.model.Task;
 import com.trilogyed.tasker.service.TaskerServiceLayer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.client.RestTemplate;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -21,6 +24,7 @@ public class TaskerController {
 
     @Autowired
     TaskerServiceLayer service;
+
 
     public TaskerController(TaskerServiceLayer service) {
         this.service = service;
@@ -68,4 +72,12 @@ public class TaskerController {
         taskerDao.updateTask(task);
     }
 
+    @RequestMapping(value = "/ad", method = RequestMethod.GET)
+    public String getAd() {
+        return advertisement();
+    }
+
+    private String advertisement() {
+        return null;
+    }
 }
