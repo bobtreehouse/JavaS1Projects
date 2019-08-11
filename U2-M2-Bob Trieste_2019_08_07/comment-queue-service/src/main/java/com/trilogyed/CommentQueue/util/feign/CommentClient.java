@@ -12,7 +12,6 @@ import java.util.List;
 @FeignClient(name = "comment-service")
 public interface CommentClient {
 
-}
     @RequestMapping(value = "/comment", method = RequestMethod.POST)
-    public void addComment(@RequestMapping  Comment comment);
+    public void addComment(Comment comment);
 

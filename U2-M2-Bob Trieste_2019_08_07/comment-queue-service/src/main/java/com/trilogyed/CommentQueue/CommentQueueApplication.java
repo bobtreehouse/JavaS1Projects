@@ -41,19 +41,8 @@ public class CommentQueueApplication {
 	Binding binding(Queue queue, TopicExchange exchange) {
 		return BindingBuilder.bind(queue).to(exchange).with(ROUTING_KEY);
 	}
-	//A second Queue for deletions
-	public static final String DELETE_QUEUE_NAME = "comment-delete-queue";
-	public static final String DELETE_ROUTING_KEY = "commentDelete.#";
 
-	@Bean
-	Queue deleteQueue() {
-		return new Queue(DELETE_QUEUE_NAME, false);
-	}
 
-	@Bean
-	Binding deleteBinding(Queue deleteQueue, TopicExchange exchange) {
-		return BindingBuilder.bind(deleteQueue).to(exchange).with(DELETE_ROUTING_KEY);
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(CommentQueueApplication.class, args);

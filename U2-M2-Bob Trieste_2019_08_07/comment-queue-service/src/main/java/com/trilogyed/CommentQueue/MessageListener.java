@@ -23,5 +23,14 @@ public class MessageListener {
     public void receiveMessages(Comment message) {
         System.out.println(message.toString());
         commentClient.addComment(message);
+
+        /*
+
+        add '.forEach'
+
+        listen for each and create using CLient comment ".forEach"
+
+
+         */
     }
 }
