@@ -1,0 +1,314 @@
+openapi: 3.0.0
+info:
+  title: Invoice Service
+  description:
+    A simple service that allows CRUD operations for a game store inventory
+    system.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:8080'
+    description: Local dev server
+paths:
+  /Console:
+    post:
+      summary: Creates a new Console entry with the given information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Console'
+      responses:
+        '201':
+          description: A Console object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Console'
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete Console information. Some required fields missing.
+  /Console/{id}:
+    get:
+      summary: Retrieves the entry for the Console with the give ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Console you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Console object matching given ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Console'
+    delete:
+      summary: Deletes the entry for the Console with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Console you would like to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Console successfully deleted.
+    put:
+      summary: Updated the entry for the Console with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Console you would like to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Console'
+      responses:
+        '200':
+          description: Console successfully updated.
+        '422':
+          description: Console ID on path mush match the ID in the Console object
+  /Game:
+    post:
+      summary: Creates a new Game entry with the given information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Game'
+      responses:
+        '201':
+          description: An Game object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete Game information. Some required fields missing.
+  /Game/{id}:
+    get:
+      summary: Retrieves the entry for the Game with the give ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Game you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Game object matching given ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Game'
+    delete:
+      summary: Deletes the entry for the Game with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Game you would like to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Game successfully deleted.
+    put:
+      summary: Updated the entry for the Game with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Game you would like to update.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Game'
+      responses:
+        '200':
+          description: Game successfully updated.
+        '422':
+          description: Game ID on path mush match the ID in the Game object.
+  /invoice:
+    post:
+      summary: Creates a new invoice entry with the given information
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Invoice'
+      responses:
+        '201':
+          description: An invoice object
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+        '400':
+          description: Invalid request syntax.
+        '422':
+          description: Incomplete invoice information. Some required fields missing
+  /invoice/{id}:
+    get:
+      summary: Retrieves the entry for the invoice with the give ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the invoice you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Invoice object matching given ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+    delete:
+      summary: Deletes the entry for the Console with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Console you would like to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Console successfully deleted.
+  /invoice/Console/{ConsoleId}:
+    get:
+      summary: Retrieves the entry for the invoice with the give Console ID.
+      parameters:
+        - name: ConsoleId
+          in: path
+          required: true
+          description: ID of the Console you would like to retrieve the invoice for.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: Invoice object matching given ID.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Invoice'
+components:
+  schemas:
+    Console:
+      properties:
+        id:
+          type: integer
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+        company:
+          type: string
+        phone:
+          type: string
+      required:
+        - firstName
+        - lastName
+        - email
+        - company
+        - phone
+    Game:
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+        dailyRate:
+          type: number
+      required:
+        - name
+        - description
+        - dailyRate
+    Invoice:
+      properties:
+        id:
+          type: integer
+        ConsoleId:
+          type: integer
+        orderDate:
+          type: string
+        pickupDate:
+          type: string
+        returnDate:
+          type: string
+        lateFee:
+          type: number
+        Tshirts:
+          type: array
+          Games:
+            $ref: '#/components/schemas/Tshirt'
+      required:
+          - ConsoleId
+          - orderDate
+          - pickupDate
+          - returnDate
+          - lateFee
+          - Tshirts
+    Tshirt:
+      properties:
+        id:
+          type: integer
+        invoiceId:
+          type: integer
+        GameId:
+          type: integer
+        quantity:
+          type: integer
+        unitRate:
+          type : number
+        discount:
+          type: number
+      required:
+        - invoiceId
+        - GameId
+        - quantity
+        - unitRate
+        - discount

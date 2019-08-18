@@ -1,0 +1,11 @@
+
+
+*Interfaces versus Abstraction:
+
+
+With abstraction you can only have one abstract Class however with interfaces you have have a countless 
+number for different purposes. 
+
+However; the abstract methd allow for some more "one-off" customization for the class whereas the interface
+has to run its full course as designed. 
+

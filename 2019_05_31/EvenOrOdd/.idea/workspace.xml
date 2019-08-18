@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d37ce9b-15fd-4e57-b83e-e1d08f85dc75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../katas/.idea/katas.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/CountTo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/EvenOrOdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/EvenOrOdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-Hi-Lo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-Hi-Lo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-Hi-Lo/starter-code/HiLo/target/classes/com/company/HiLo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../01-Hi-Lo/starter-code/HiLo/target/classes/com/company/HiLo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-How-many-times-to-7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-How-many-times-to-7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-How-many-times-to-7/HowManyTimesTo7/src/main/java/HowManyTimesTo7.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-How-many-times-to-7/HowManyTimesTo7/src/main/java/HowManyTimesTo7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-Fizz-Buzz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-Fizz-Buzz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/IsJavaKeyword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_19_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_19_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/U1M1L3Katas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClassNotes/Wk_1_Day_3/ClassNotes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/AgeAgain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/AgeAgain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountByThirteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/CountByThirteen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountByTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/CountByTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/CountTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/EvenOrOdd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/FavoriteProgrammingLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/FavoriteProgrammingLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/IsJavaKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/IsJavaKeyword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/RangeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/RangeChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/UltimateQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/UltimateQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/main/java/com/company/YourAgeCan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/main/java/com/company/YourAgeCan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/AgeAgainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/AgeAgainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/AllKatasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/AllKatasTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/CountByThirteenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/CountByThirteenTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/CountByTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/CountByTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/CountToTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/CountToTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/EvenOrOddTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/EvenOrOddTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/FavoriteProgrammingLanguageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/FavoriteProgrammingLanguageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/IsJavaKeywordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/IsJavaKeywordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/RangeCheckerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/RangeCheckerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/UltimateQuestionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/UltimateQuestionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/src/test/java/com/company/YourAgeCanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/src/test/java/com/company/YourAgeCanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/AgeAgain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/AgeAgain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/CountByThirteen.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/CountByThirteen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/CountByTwo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/CountByTwo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/CountTo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/CountTo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/EvenOrOdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/FavoriteProgrammingLanguage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/FavoriteProgrammingLanguage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/RangeChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/RangeChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/UltimateQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/UltimateQuestion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/classes/com/company/YourAgeCan.class" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/target/classes/com/company/YourAgeCan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/test-classes/com/company/AgeAgainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/test-classes/com/company/CountByThirteenTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/test-classes/com/company/CountByTwoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/test-classes/com/company/EvenOrOddTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/test-classes/com/company/FavoriteProgrammingLanguageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/test-classes/com/company/IsJavaKeywordTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/target/test-classes/com/company/UltimateQuestionTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/AgeAgain/input8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/AgeAgain/input8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByThirteen/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByThirteen/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByThirteen/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByThirteen/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByThirteen/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByThirteen/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByThirteen/output0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByThirteen/output0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByThirteen/output1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByThirteen/output1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByThirteen/output2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByThirteen/output2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByTwo/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByTwo/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByTwo/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByTwo/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByTwo/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByTwo/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByTwo/output0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByTwo/output0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByTwo/output1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByTwo/output1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountByTwo/output2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountByTwo/output2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountTo/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountTo/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountTo/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountTo/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountTo/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountTo/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountTo/output0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountTo/output0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountTo/output1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountTo/output1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/CountTo/output2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/CountTo/output2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/EvenOrOdd/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/EvenOrOdd/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/EvenOrOdd/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/EvenOrOdd/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/EvenOrOdd/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/EvenOrOdd/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/FavoriteProgrammingLanguage/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/FavoriteProgrammingLanguage/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/IsJavaKeyword/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/IsJavaKeyword/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/IsJavaKeyword/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/IsJavaKeyword/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/IsJavaKeyword/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/IsJavaKeyword/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/RangeChecker/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/RangeChecker/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/UltimateQuestion/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/UltimateQuestion/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../katas/starter-code/U1M1L3Katas/testfiles/YourAgeCan/input7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../katas/U1M1L3Katas/testfiles/YourAgeCan/input7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ClassNotes/Wk_1_Day_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClassNotes/Wk_1_Day_3/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/EvenOrOdd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/EvenOrOdd.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="488" />
+    <option name="y" value="190" />
+    <option name="width" value="2029" />
+    <option name="height" value="1099" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="EvenOrOdd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvenOrOdd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvenOrOdd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvenOrOdd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EvenOrOdd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EvenOrOdd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="EvenOrOdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.EvenOrOdd" />
+      <module name="EvenOrOdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EvenOrOdd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d37ce9b-15fd-4e57-b83e-e1d08f85dc75" name="Default Changelist" comment="" />
+      <created>1559289694734</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559289694734</updated>
+      <workItem from="1559289696013" duration="99000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="99000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="488" y="190" width="2029" height="1099" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18486542" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32919255" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32949308" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/EvenOrOdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

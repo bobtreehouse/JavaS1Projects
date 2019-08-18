@@ -1,0 +1,7 @@
+vin,vehicle_type,make,model,year,color
+12340,Motorcycle,Suzuki,CBR100RR,2004,Tan
+12345,Motorcycle,Suzuki,"Africa Twin",1999,Red
+12346,Truck,Ford,F-150,2000,Blue
+12347,Automobile,Cheverolet,Malibu,2001,White
+12348,Other,Subaru,Outback,2002,Black
+12349,Motorcycle,Honda,DL650,2003,Grey

@@ -1,0 +1,131 @@
+openapi: 3.0.0
+info:
+  title: Book REST Web Service for Book System Group Project
+  description:
+    Book RESTfull Web Service is used to access and modify Books in the Book Database and corresponding Notes in the Note Database.
+  version: 0.0.1
+servers:
+  - url: 'http://localhost:4242'
+    description: Localhost - Port No. 4242
+paths:
+  /books:
+    get:
+      summary: Retrieves All Books and corresponding Notes from the database
+      responses:
+        '200':
+          description: A list of Book View Models
+          content:
+            array:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Book'
+    post:
+      summary: Creates a new book entry with its new corresponding notes.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        '201':
+          description: A Book View Model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+        '422':
+          description: Incomplete Book information.
+
+  /books/{id}:
+    get:
+      summary: Retrieves an entry for the Book with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Book you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: A Book View Model
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+        '404':
+          description: Book ID cannot be found in DB.
+
+    delete:
+      summary: Deletes the entry for the Book with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Book you would like to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '204':
+          description: No content.
+        '404':
+          description: Book ID cannot be found in DB.
+
+    put:
+      summary: Update the entry for the Book with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: id of the Book you want to update
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        '204':
+          description: No Content.
+        '404':
+          description: Book ID cannot be found in DB.
+        '422':
+          description: Incomplete Book information.
+
+components:
+  schemas:
+    Book:
+      properties:
+        bookId:
+          type: integer
+        title:
+          type: string
+        author:
+          type: string
+        notes:
+          type: array
+          items:
+            $ref: '#/components/schemas/Note'
+      required:
+        - title
+        - author
+
+    Note:
+      properties:
+        noteId:
+          type: integer
+        bookId:
+          type: integer
+        note:
+          type: string
+      required:
+        - bookId
+        - note

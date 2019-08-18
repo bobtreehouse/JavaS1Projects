@@ -1,0 +1,154 @@
+openapi: 3.0.0
+
+title: task REST Web Service for task System Group Project / Bob Trieste
+description:
+    Task RESTfull Web Service is used to access and modify tasks in the
+    task Database and an Ads in the Note Database.
+version: 0.0.1
+servers:
+  - url: 'http://localhost:6108'
+    description: task-service
+paths:
+  /tasks:
+    get:
+      summary: Retrieves All tasks from the database
+      responses:
+        '200':
+          description: A list of tasks
+          content:
+            array:
+              schema:
+                type: string
+                items:
+                  $ref: '#/components/schemas/Note'
+    post:
+      summary: Creates a new Note entry.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Note'
+      responses:
+        '201':
+          description: A Note
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+        '422':
+          description: Incomplete Note information.
+
+  /tasks/book/{book_id}:
+    get:
+      summary: Retrieves all tasks for the given Book ID.
+      parameters:
+        - name: book_id
+          in: path
+          required: true
+          description: ID of the Bood you would like to retrieve tasks for.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: A list of tasks
+          content:
+            array:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Note'
+
+  /tasks/{id}:
+    get:
+      summary: Retrieves an entry for the Note with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Note you would like to retrieve.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '200':
+          description: A Note
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+        '404':
+          description: Note ID cannot be found in DB.
+
+    delete:
+      summary: Deletes the entry for the Note with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID of the Note you would like to delete.
+          schema:
+            type: integer
+            format: int64
+            minimum: 1
+      responses:
+        '204':
+          description: No content.
+        '404':
+          description: Note ID cannot be found in DB.
+
+    put:
+      summary: Update the entry for the Note with the given ID.
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: id of the Note you want to update
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Note'
+      responses:
+        '204':
+          description: No Content.
+        '404':
+          description: Note ID cannot be found in DB.
+        '422':
+          description: Incomplete Note information.
+
+components:
+  schemas:
+    task:
+      properties:
+        taskId:
+          type: integer
+        title:
+          type: string
+        author:
+          type: string
+        Ads:
+          type: string
+          items:
+            $ref: '#/components/schemas/Note'
+
+    Note:
+      properties:
+        noteId:
+          type: integer
+        taskId:
+          type: integer
+        note:
+          type: string
+      required:
+        - taskId
+        - taskDescription
+        - createDate
+        - dueDate
+        - category

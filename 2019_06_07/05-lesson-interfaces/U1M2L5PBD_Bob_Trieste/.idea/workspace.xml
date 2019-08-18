@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="b1b6b1c6-b5de-43e6-a628-61f855c67442" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../2019_06_04/U1M1L6Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2019_06_04/U1M1L6Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2019_06_05/PBD_Bob_T_Objects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2019_06_05/PBD_Bob_T_Objects/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PBD/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PBD.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercises47.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exercises47.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercises50.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exercises50.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercises55.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exercises55.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercises58.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercises60.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exercises60.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Exercises61.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Exercises61.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exercises47.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exercises50.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exercises55.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exercises58.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exercises60.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exercises60.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Exercises61.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Exercises61.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activities/implementation-userIO-interface/starter-code/UserIO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activities/implementation-userIO-interface/starter-code/UserIO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activities/katas/starter-code/U1M2L5Katas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activities/katas/starter-code/U1M2L5Katas/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../code/.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="b1b6b1c6-b5de-43e6-a628-61f855c67442" name="Default Changelist" comment="" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exercises47.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="240">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+=======
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exercises50.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exercises55.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="60">
+=======
+            <state relative-caret-position="51">
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="false">
+=======
+      <file pinned="false" current-in-tab="true">
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exercise58.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exercises61.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="60">
+=======
+            <state relative-caret-position="51">
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exercises60.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Exercises60.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/Exercises50.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/main/java/Exercises55.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises58.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises58" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises61.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises60.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercise58" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercise58.java" />
+=======
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+        <option value="$PROJECT_DIR$/src/main/java/Exercises47.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises55.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises58.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises58" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises61.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercises60.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercise58" />
+        <option value="$PROJECT_DIR$/src/main/java/Exercise58.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="154" />
+    <option name="y" value="60" />
+    <option name="width" value="3248" />
+    <option name="height" value="1998" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="154" />
+    <option name="y" value="60" />
+    <option name="width" value="2346" />
+    <option name="height" value="1320" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="U1M2L5PBD_Bob_Trieste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1M2L5PBD_Bob_Trieste" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1M2L5PBD_Bob_Trieste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1M2L5PBD_Bob_Trieste" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1M2L5PBD_Bob_Trieste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1M2L5PBD_Bob_Trieste" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="U1M2L5PBD_Bob_Trieste" type="b2602c69:ProjectViewProjectNode" />
+              <item name="U1M2L5PBD_Bob_Trieste" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+=======
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../2019_06_05/PBD_Bob_T_Objects" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Exercise58">
+    <configuration name="Exercise58" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Exercise58" />
+      <module name="PBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+<<<<<<< HEAD
+=======
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises50" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.comany.Exercises50" />
+      <module name="PBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises55" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercises55" />
+      <module name="PBD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises58" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Exercises58" />
+      <module name="PBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises60" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercises60" />
+      <module name="PBD" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises50" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.comany.Exercises50" />
+      <module name="PBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.comany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises55" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercises55" />
+      <module name="PBD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises58" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Exercises58" />
+      <module name="PBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercises60" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exercises60" />
+      <module name="PBD" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Exercise58" />
+        <item itemvalue="Application.Exercises60" />
+        <item itemvalue="Application.Exercises58" />
+        <item itemvalue="Application.Exercises55" />
+        <item itemvalue="Application.Exercises50" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1b6b1c6-b5de-43e6-a628-61f855c67442" name="Default Changelist" comment="" />
+      <created>1559846929697</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559846929697</updated>
+      <workItem from="1559846930991" duration="342000" />
+      <workItem from="1559870804649" duration="4998000" />
+<<<<<<< HEAD
+      <workItem from="1559911188361" duration="3036000" />
+=======
+      <workItem from="1559900370492" duration="17000" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="13454000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="77" y="30" width="1624" height="999" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.120051086" />
+=======
+    <option name="totallyTimeSpent" value="10435000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="154" y="60" width="2346" height="1320" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16710411" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23841618" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2653749" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.31255266" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16579178" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Learn" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23841618" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2653749" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.31255266" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises58" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercise58" />
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises55.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises61.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises47.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises50.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises55.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercise58.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="306">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+=======
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises60.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+=======
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercise58.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="240">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="306">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+>>>>>>> 79768d01eb207d8ba4a684cf9c048370b60c45fa
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Exercises60.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
